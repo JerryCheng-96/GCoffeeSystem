@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>20</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>280</x>
+      <y>160</y>
+      <w>460</w>
+      <h>380</h>
+    </coordinates>
+    <panel_attributes>Product
+--
+-code: String
+-description: String
+-price: double
+--
++getCode(): String
++getDescription(): String
++getPrice(): double
++equals(object: Object): boolean
++toString(): String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>580</x>
+      <y>680</y>
+      <w>420</w>
+      <h>460</h>
+    </coordinates>
+    <panel_attributes>Coffee
+--
+-origin: String
+-roast: String
+-flavor: String
+-aroma: String
+-acidity: String
+-body: String
+--
++getOrigin(): String
++getRoast(): String
++getFlavor(): String
++getAroma(): String
++getAcidity(): String
++getBody(): String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>20</x>
+      <y>680</y>
+      <w>420</w>
+      <h>300</h>
+    </coordinates>
+    <panel_attributes>CoffeeBrewer
+--
+-model: String
+-waterSupply: String
+-numberOfCups: int
+--
++getModel(): String
++getWaterSupply(): String
++getNumberOfCups(): int
++toString(): String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1020</x>
+      <y>180</y>
+      <w>460</w>
+      <h>320</h>
+    </coordinates>
+    <panel_attributes>OrderItem
+--
+-quantity: int
+--
++getProduct(): Product
++getQuantity(): int
++setQuantity(newQuantity: int)
++getValue(): double
++toString(): String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>220</x>
+      <y>520</y>
+      <w>340</w>
+      <h>200</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>150.0;10.0;150.0;50.0;10.0;50.0;10.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>500</x>
+      <y>580</y>
+      <w>320</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;20.0;140.0;20.0;140.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>720</x>
+      <y>320</y>
+      <w>340</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=1
+m2=1</panel_attributes>
+    <additional_attributes>10.0;10.0;150.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Text</id>
+    <coordinates>
+      <x>760</x>
+      <y>280</y>
+      <w>140</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>-product
+style=wordwrap</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
